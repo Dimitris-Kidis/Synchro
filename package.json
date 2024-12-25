@@ -48,7 +48,7 @@
     "ngx-infinite-scroll": "^17.0.0",
     "ngx-material-timepicker": "^13.1.1",
     "ngx-quill": "^25.0.0",
-    "ngx-toastr": "^16.2.0",
+    "ngx-toastr": "^19.0.0",
     "rxjs": "~7.8.0",
     "zone.js": "~0.14.10"
   },
