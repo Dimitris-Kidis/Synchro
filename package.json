@@ -90,6 +90,6 @@
     "stylelint-prettier": "^2.0.0",
     "stylelint-scss": "^4.0.1",
     "tslib": "^2.6.2",
-    "typescript": "~5.4.3"
+    "typescript": "~5.4.5"
   }
 }
