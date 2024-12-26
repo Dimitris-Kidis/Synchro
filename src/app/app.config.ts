@@ -1,4 +1,4 @@
-import { APP_INITIALIZER, ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig, importProvidersFrom, inject, provideAppInitializer } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
 import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
@@ -48,17 +48,13 @@ export const appConfig: ApplicationConfig = {
       useClass: TokenInterceptor,
       multi: true,
     },
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initializeUser,
-      deps: [CurrentUserProvider],
-      multi: true,
-    },
-    {
-      provide: APP_INITIALIZER,
-      useFactory: initializeSignalR,
-      deps: [SignalRService],
-      multi: true,
-    },
+    provideAppInitializer(() => {
+        const initializerFn = (initializeUser)(inject(CurrentUserProvider));
+        return initializerFn();
+      }),
+    provideAppInitializer(() => {
+        const initializerFn = (initializeSignalR)(inject(SignalRService));
+        return initializerFn();
+      }),
   ],
 };
