@@ -6,7 +6,8 @@
 @import 'styles/synchro-config';
 @import 'styles/themes';
 // @import 'node_modules/@fortawesome/fontawesome-free/scss/all.scss';
-@include mat.core();
+@include mat.elevation-classes();
+@include mat.app-background();
 
 // $text-color-primary: #2e4368;
 // $text-color-primary: #3f5467;
