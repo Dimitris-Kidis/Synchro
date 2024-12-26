@@ -9,6 +9,7 @@ import { PageTitleService } from '../../common/services/page-title.service';
   selector: 'synchro-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
+  standalone: false,
   encapsulation: ViewEncapsulation.None,
   providers: [NgOnDestroy],
 })

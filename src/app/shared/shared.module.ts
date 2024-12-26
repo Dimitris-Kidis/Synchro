@@ -5,7 +5,7 @@ import { TRANSLATE_CONFIG } from '../core/configs/translate.config';
 import { TranslateResolveNullPipe } from '../pipes/translate-resolve-null.pipe';
 
 @NgModule({
-  imports: [CommonModule, TranslateModule, TranslateResolveNullPipe, TranslateModule.forRoot(TRANSLATE_CONFIG)],
+  imports: [CommonModule, TranslateResolveNullPipe, TranslateModule.forRoot(TRANSLATE_CONFIG)],
   exports: [CommonModule, TranslateModule, TranslateResolveNullPipe],
 })
 export class SharedModule {}

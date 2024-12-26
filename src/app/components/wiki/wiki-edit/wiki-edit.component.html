@@ -22,10 +22,10 @@
     <div class="content">
       <quill-editor
         [(ngModel)]="wikiPage.content"
-        [modules]="quillConfig.modules"
-        [placeholder]="quillConfig.placeholder"
-        [readOnly]="quillConfig.readOnly"
-        [format]="quillConfig.format"
+        [modules]="quillConfig.modules!"
+        [placeholder]="quillConfig.placeholder!"
+        [readOnly]="quillConfig.readOnly!"
+        [format]="quillConfig.format!"
         class="editor"
         name="content"
       ></quill-editor>

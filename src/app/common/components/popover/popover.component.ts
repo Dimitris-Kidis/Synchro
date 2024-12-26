@@ -7,6 +7,7 @@ import { ClosePopoverEvent } from './close-popover.event';
   selector: 'synchro-popover',
   templateUrl: './popover.component.html',
   styleUrls: ['./popover.component.scss'],
+  standalone: false,
 })
 export class PopoverComponent implements OnInit, OnChanges {
   @Input() public headerText?: string | null;

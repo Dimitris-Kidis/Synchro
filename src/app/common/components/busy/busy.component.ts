@@ -5,6 +5,7 @@ import * as _ from 'lodash-es';
   selector: 'synchro-busy',
   templateUrl: './busy.component.html',
   styleUrls: ['./busy.component.scss'],
+  standalone: false,
 })
 export class BusyComponent {
   @Input() public isBusy: boolean;
