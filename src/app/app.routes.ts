@@ -52,7 +52,7 @@ export const routes: Routes = [
       },
       {
         path: 'project',
-        canActivate: [authGuard, groupGuard],
+        // canActivate: [authGuard, groupGuard],
         // canActivate: [authGuard, groupGuard, adminGuard],
         // resolve: {
         //   currentUser: currentUserResolver,
